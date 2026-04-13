@@ -1,0 +1,77 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+  color: #2d3436;
+}
+
+header {
+  padding: 20px;
+  background: #fff;
+}
+
+.back-btn {
+  text-decoration: none;
+  color: #6c5ce7;
+  font-weight: bold;
+}
+
+.data-hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #2d3436;
+  color: white;
+}
+
+.tools {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.tool-list span {
+  display: inline-block;
+  background: #e1e5ea;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.projects {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.view-btn {
+  display: inline-block;
+  margin-top: 10px;
+  color: #6c5ce7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #f1f2f6;
+}

@@ -1,0 +1,107 @@
+/* পুরো পেজের বেসিক ডিজাইন */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* About সেকশন ডিজাইন */
+#about {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#about h2 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #6e8efb;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+#about p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* স্কিল সেকশন (বক্স স্টাইল) */
+.skills {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-left: 5px solid #6e8efb;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+}
+
+.skills h3 {
+  margin-top: 0;
+  color: #6e8efb;
+  font-size: 1.3rem;
+}
+
+.skills ul {
+  list-style: none; /* বুলেট পয়েন্ট রিমুভ করবে */
+  padding: 0;
+  margin: 0;
+}
+
+.skills li {
+  padding: 8px 0;
+  font-weight: 600;
+  color: #444;
+  border-bottom: 1px solid #eee;
+}
+
+.skills li:last-child {
+  border-bottom: none;
+}
+
+/* ফুটার ডিজাইন */
+footer {
+  background: #2c3e50;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
+.social-links {
+  margin: 20px 0;
+}
+
+.social-links a {
+  color: #6e8efb;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #ffeb3b; /* হোভার করলে হলুদ হবে */
+  text-decoration: underline;
+}
+
+/* ইমেইল লিঙ্ক স্টাইল */
+footer a[href^="mailto"] {
+  text-decoration: none;
+  font-weight: bold;
+}
