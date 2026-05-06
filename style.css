@@ -4,6 +4,8 @@
   --text-light: #f8fafc;
   --glass-bg: rgba(255, 255, 255, 0.05);
   --glass-border: rgba(255, 255, 255, 0.1);
+  --shadow-premium: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --accent-glow: 0 0 15px rgba(255, 235, 59, 0.3);
 }
 
 body {
@@ -30,6 +32,12 @@ nav {
   box-sizing: border-box;
   border-bottom: 1px solid var(--glass-border);
   animation: slideDown 0.8s ease-out;
+}
+
+nav:hover {
+  background: rgba(15, 23, 42, 0.95);
+  border-bottom-color: var(--primary-color);
+  transition: 0.4s ease;
 }
 
 .nav-logo {
@@ -129,7 +137,13 @@ section {
   text-decoration: none;
   font-weight: 700;
   border-radius: 8px;
-  transition: 0.3s transform;
+  transition: 0.3s all ease;
+  box-shadow: var(--accent-glow);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.02);
+  filter: brightness(1.1);
 }
 
 .btn-outline {
@@ -153,6 +167,14 @@ footer {
   padding: 40px;
   border-top: 1px solid var(--glass-border);
   color: #64748b;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
 }
 
 @keyframes slideDown {
