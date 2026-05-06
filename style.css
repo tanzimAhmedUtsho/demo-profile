@@ -82,6 +82,19 @@ h2.section-title {
   color: var(--primary-color);
 }
 
+.btn-hire {
+  color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color);
+  padding: 6px 20px;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+
+.btn-hire:hover {
+  background: var(--primary-color);
+  color: var(--bg-dark) !important;
+}
+
 section {
   padding: 100px 10%;
   max-width: 1200px;
