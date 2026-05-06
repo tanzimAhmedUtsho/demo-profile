@@ -9,7 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cloudflare.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <style>
       .container {
         display: flex;
@@ -22,10 +25,18 @@
         margin: 30px 0;
         text-align: left;
       }
-      .contact-details div {
-        margin-bottom: 15px;
-        border-bottom: 1px solid var(--glass-border);
-        padding-bottom: 10px;
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 12px;
+        margin-bottom: 10px;
+      }
+      .item i {
+        color: var(--primary-color);
+        font-size: 1.2rem;
       }
     </style>
   </head>
@@ -42,25 +53,33 @@
 
         <div class="contact-details">
           <div class="item">
-            <i class="fas fa-envelope"></i>
-            <p>utshotanzim@gmail.com</p>
+            <i class="fa-solid fa-envelope"></i>
+            <p style="margin: 0; color: white">utshotanzim@gmail.com</p>
           </div>
           <div class="item">
-            <i class="fas fa-phone-alt"></i>
-            <p>+8801756467670</p>
+            <i class="fa-solid fa-phone"></i>
+            <p style="margin: 0; color: white">+880 1756 467670</p>
           </div>
           <div class="item">
-            <i class="fas fa-map-marker-alt"></i>
-            <p>Agargaon, Dhaka</p>
+            <i class="fa-solid fa-location-dot"></i>
+            <p style="margin: 0; color: white">Agargaon, Dhaka</p>
           </div>
         </div>
 
         <div class="actions">
-          <!-- Replace 'cv.pdf' with your actual CV file name -->
-          <a href="cv.pdf" class="btn download-btn" download>
+          <a
+            href="cv.pdf"
+            class="btn-primary"
+            style="margin-bottom: 10px; text-align: center"
+            download
+          >
             <i class="fas fa-file-download"></i> Download CV
           </a>
-          <a href="mailto:utshotanzim@gmail.com" class="btn email-btn">
+          <a
+            href="mailto:utshotanzim@gmail.com"
+            class="btn-outline"
+            style="text-align: center; border-radius: 8px"
+          >
             <i class="fas fa-paper-plane"></i> Send Email
           </a>
         </div>

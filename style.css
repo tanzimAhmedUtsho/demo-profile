@@ -12,7 +12,6 @@ body {
   background-color: var(--bg-dark);
   color: var(--text-light);
   scroll-behavior: smooth;
-  line-height: 1.6;
   text-align: center;
 }
 
@@ -55,6 +54,14 @@ nav {
   font-size: 1.2rem;
 }
 
+/* Typography & Content Layout */
+h2.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -73,6 +80,12 @@ nav {
 
 .nav-links a:hover {
   color: var(--primary-color);
+}
+
+section {
+  padding: 100px 10%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Global Components */
@@ -136,6 +149,12 @@ footer {
   to {
     transform: translateY(0);
   }
+}
+
+p {
+  color: #94a3b8;
+  line-height: 1.8;
+  font-size: 1.05rem;
 }
 
 h1 span {
