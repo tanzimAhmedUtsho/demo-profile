@@ -3,191 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>আমার পোর্টফোলিও</title>
+    <title>Tanzim Ahmed | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Navigation Bar and Profile Image -->
-    <nav
-      style="
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 50px;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(15px);
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1000;
-        box-sizing: border-box;
-      "
-    >
-      <!-- প্রোফাইল ছবি ও নাম -->
-      <div style="display: flex; align-items: center; gap: 15px">
-        <img
-          src="/image/Tanzim Ahmed 2x2.jpg"
-          alt="Tanzim"
-          style="
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            border: 2px solid #ffeb3b;
-            object-fit: cover;
-          "
-        />
-        <span style="color: white; font-weight: bold; letter-spacing: 1px"
-          >TANZIM</span
-        >
-      </div>
+    <nav>
+      <a href="#" class="nav-logo">
+        <img src="/image/Tanzim Ahmed 2x2.jpg" alt="Tanzim" />
+        <span>TANZIM</span>
+      </a>
 
-      <!-- মেনু লিঙ্কস -->
-      <ul
-        style="
-          list-style: none;
-          display: flex;
-          gap: 25px;
-          margin: 0;
-          padding: 0;
-        "
-      >
-        <li>
-          <a
-            href="#"
-            style="
-              color: white;
-              text-decoration: none;
-              font-size: 14px;
-              font-weight: 500;
-              transition: 0.3s;
-            "
-            >Home</a
-          >
-        </li>
-        <li>
-          <a
-            href="#about"
-            style="
-              color: white;
-              text-decoration: none;
-              font-size: 14px;
-              font-weight: 500;
-            "
-            >About</a
-          >
-        </li>
-        <li>
-          <a
-            href="skill.html"
-            style="
-              color: white;
-              text-decoration: none;
-              font-size: 14px;
-              font-weight: 500;
-            "
-            >Data Analysis</a
-          >
-        </li>
-        <li>
-          <a
-            href="hireMe.html"
-            style="
-              color: #ffeb3b;
-              text-decoration: none;
-              font-size: 14px;
-              font-weight: bold;
-              border: 1px solid #ffeb3b;
-              padding: 5px 15px;
-              border-radius: 20px;
-            "
-            >Hire Me</a
-          >
-        </li>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="skill.html">Data Analysis</a></li>
+        <li><a href="hireMe.html" class="btn-hire">Hire Me</a></li>
       </ul>
     </nav>
 
     <section id="hero">
       <div class="content">
-        <p
-          style="
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            color: #ffeb3b;
-            font-size: 14px;
-            margin-bottom: 0;
-            animation: glow 2s ease-in-out infinite alternate;
-          "
-        >
-          Welcome to my Digital Space
-        </p>
-
-        <!-- নিচের কোডটি আপনার CSS ফাইলে দিয়ে দিন -->
-        <style>
-          @keyframes glow {
-            from {
-              text-shadow:
-                0 0 5px #fff,
-                0 0 10px #ffeb3b;
-            }
-            to {
-              text-shadow:
-                0 0 10px #fff,
-                0 0 20px #ffeb3b;
-            }
-          }
-        </style>
-
+        <p class="hero-tagline">Welcome to my Digital Space</p>
         <h1>হ্যালো, আমি <span>Tanzim Ahmed Utsho</span></h1>
-        <p id="a">আমি একজন ওয়েব ডেভেলপার এবং ডিজাইনার।</p>
-        <a href="frontPage.html" class="btn">আমার কাজ দেখুন</a>
+        <p class="hero-sub">
+          আমি একজন প্রফেশনাল ওয়েব ডেভেলপার এবং ডাটা এনালিস্ট। আধুনিক প্রযুক্তির
+          সমন্বয়ে ডিজিটাল সমাধান তৈরি করাই আমার লক্ষ্য।
+        </p>
+        <a href="frontPage.html" class="btn-primary">আমার প্রজেক্ট দেখুন</a>
       </div>
     </section>
 
     <section id="about">
-      <h2>আমার সম্পর্কে</h2>
-      <p>
-        আমি একজন প্রযুক্তিপ্রেমী এবং ভবিষ্যৎ
-        <b>ওয়েব ডেভেলপার ও ডাটা এনালিস্ট</b>। নতুন নতুন টেকনোলজি শিখতে এবং
-        সেগুলোকে বাস্তব জীবনে প্রয়োগ করতে আমি ভীষণ পছন্দ করি। আমি বর্তমানে
-        <b>HTML, CSS এবং JavaScript</b> ব্যবহার করে আধুনিক ও ব্যবহারকারী-বান্ধব
-        ওয়েবসাইট তৈরিতে মনোযোগ দিচ্ছি। পাশাপাশি, জটিল ডাটা বা তথ্য বিশ্লেষণ করে
-        সৃজনশীল সমাধান খুঁজে বের করার প্রতি আমার বিশেষ ঝোঁক রয়েছে। আমি বিশ্বাস
-        করি, পরিশ্রম আর সঠিক পরিকল্পনার মাধ্যমে যেকোনো ডিজিটাল চ্যালেঞ্জ জয় করা
-        সম্ভব।
-      </p>
-      <div style="text-align: center; margin-top: 30px">
-        <a
-          href="detailsMe.html"
-          style="
-            display: inline-block;
-            padding: 10px 30px;
-            font-size: 16px;
-            font-weight: bold;
-            color: #252520;
-            text-decoration: none;
-            border: 2px solid #666241;
-            border-radius: 30px;
-            transition: all 0.3s ease;
-            background: transparent;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-          "
-          onmouseover="
-            this.style.backgroundColor = '#ffeb3b';
-            this.style.color = '#000';
-          "
-          onmouseout="
-            this.style.backgroundColor = 'transparent';
-            this.style.color = '#ffeb3b';
-          "
-        >
-          All About
-        </a>
+      <div class="about-card">
+        <h2 style="margin-top: 0; font-size: 2rem">আমার সম্পর্কে</h2>
+        <p>
+          আমি একজন প্রযুক্তিপ্রেমী এবং ভবিষ্যৎ
+          <b>ওয়েব ডেভেলপার ও ডাটা এনালিস্ট</b>। বর্তমানে আমি আধুনিক প্রযুক্তির
+          ব্যবহার করে ব্যবহারকারী-বান্ধব ওয়েবসাইট তৈরিতে নিবেদিত। জটিল ডাটা
+          বিশ্লেষণ করে ইনসাইট বের করা এবং সেগুলোকে ভিজুয়ালি উপস্থাপন করা আমার
+          অন্যতম দক্ষতা।
+        </p>
+        <a href="detailsMe.html" class="btn-outline">বিস্তারিত জানুন</a>
       </div>
     </section>
 
     <footer>
-      <p>&copy; ২০২৬ আপনার নাম | সর্বস্বত্ব সংরক্ষিত</p>
+      <p>&copy; ২০২৬ তানজিম আহমেদ | সর্বস্বত্ব সংরক্ষিত</p>
     </footer>
   </body>
 </html>
