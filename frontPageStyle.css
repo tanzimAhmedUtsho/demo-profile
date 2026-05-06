@@ -1,45 +1,39 @@
 /* পুরো পেজের বেসিক ডিজাইন */
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f2f5;
-  color: #333;
-  line-height: 1.6;
 }
 
 /* About সেকশন ডিজাইন */
 #about {
   max-width: 800px;
-  margin: 50px auto;
+  margin: 120px auto 50px;
   padding: 40px;
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
   text-align: center;
+  color: var(--text-light);
 }
 
 #about h2 {
-  color: #2c3e50;
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 20px;
-  border-bottom: 3px solid #6e8efb;
-  display: inline-block;
-  padding-bottom: 5px;
+  color: var(--primary-color);
 }
 
 #about p {
-  font-size: 1.1rem;
-  color: #555;
+  color: #94a3b8;
   margin-bottom: 30px;
 }
 
 /* স্কিল সেকশন (বক্স স্টাইল) */
 .skills {
-  background-color: #f9f9f9;
+  background: rgba(255, 255, 255, 0.03);
   padding: 25px;
-  border-left: 5px solid #6e8efb;
-  border-radius: 8px;
+  border-left: 4px solid var(--primary-color);
+  border-radius: 12px;
   display: inline-block;
   text-align: left;
   width: 100%;
@@ -48,8 +42,7 @@ body {
 
 .skills h3 {
   margin-top: 0;
-  color: #6e8efb;
-  font-size: 1.3rem;
+  color: white;
 }
 
 .skills ul {

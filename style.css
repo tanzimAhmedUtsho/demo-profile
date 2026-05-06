@@ -175,3 +175,20 @@ h1 span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-top: 2rem;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  color: var(--primary-color);
+  transform: translateX(-5px);
+}
